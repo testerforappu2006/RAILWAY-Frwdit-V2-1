@@ -1,3 +1,4 @@
+
 # 📠 Auto Forward V2
 A Simple Bot can copy any media to a private channel provided!
 Without Admin Permission in FROM_CHANNEL
@@ -40,7 +41,7 @@ SESSION - Pyrogram string Seccion - https://replit.com/@JijinR/PyroSessionString
 
 ### Deploying on Railway:
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://youtu.be/B6jQGOJDVi0)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Ftesterforappu2006%2FFrwdit-V2&envs=BOT_TOKEN%2CAPI_ID%2CAPI_HASH%2COWNER_ID%2CCAPTION%2CSESSION&optionalEnvs=CAPTION&referralCode=appu2006)
 
 ### Legendary Way:
 #### On Linux Or VPS:
