@@ -15,8 +15,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     buttons = [[
-        InlineKeyboardButton('🔰 എന്റെ ഉടമ 🔰', url='https://telegram.dog/MRToxicDragon'),
-        InlineKeyboardButton('Update Channel ♻️', url='https://t.me/Mo_Tech_YT')
+        InlineKeyboardButton('🔰 എന്റെ ഉടമ 🔰', url='https://telegram.dog/MRToxicDragon')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -31,7 +30,8 @@ async def start(client, message):
 @Client.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
     buttons = [[
-        InlineKeyboardButton('SouceCode 💡', url='https://github.com/Jijinr/Frwdit-V2'),
+        InlineKeyboardButton('നിനക്ക് എന്നെ പോലെ ഒരാളെ വേണോ', url='https://github.com/Jijinr/Frwdit-V2'),
+        ],[
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -46,7 +46,7 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 Deploy', url='https://github.com/Jijinr/Frwdit-V2'),
+        InlineKeyboardButton('നിനക്ക് എന്നെ പോലെ ഒരാളെ വേണോ', url='https://github.com/Jijinr/Frwdit-V2'),
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -63,9 +63,9 @@ async def about(client, message):
 @Client.on_message(filters.private & filters.command(['restart']))
 async def restart(client, message):
     msg = await message.reply_text(
-        text="<i>Trying to restarting.....</i>"
+        text="<i>അന്തസുണ്ടോ അന്നേ വരൂതേ Restart ചായാൻ 🥲</i>"
     )
     await asyncio.sleep(5)
-    await msg.edit("<i>Server restarted successfully ✅</i>")
+    await msg.edit("<i>അല്ലാം കൈനപ്പോ സമാധാനം ആയില്ലേ 😐</i>")
     os.execl(sys.executable, sys.executable, *sys.argv)
     
