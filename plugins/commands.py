@@ -46,7 +46,8 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('നിനക്ക് എന്നെ പോലെ ഒരാളെ വേണോ', url='https://github.com/Jijinr/Frwdit-V2'),
+        InlineKeyboardButton('നിനക്ക് എന്നെ പോലെ ഒരാളെ വേണോ', url='https://github.com/Jijinr/Frwdit-V2')
+        ],[
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
