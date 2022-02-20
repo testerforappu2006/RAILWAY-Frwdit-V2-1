@@ -17,9 +17,6 @@ async def start(client, message):
     buttons = [[
         InlineKeyboardButton('🔰 എന്റെ ഉടമ 🔰', url='https://telegram.dog/MRToxicDragon'),
         InlineKeyboardButton('Update Channel ♻️', url='https://t.me/Mo_Tech_YT')
-        ],[
-        InlineKeyboardButton('💡 Deploy', url='https://youtu.be/B6jQGOJDVi0'),
-        InlineKeyboardButton('String Session 🎻', url ='https://youtu.be/WUN_12-dYOM')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
